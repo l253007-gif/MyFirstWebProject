@@ -1,0 +1,157 @@
+<html>
+<head>
+<title>Victoria's Journal</title>
+<style>
+
+body {
+font-family: Arial, sans-serif; 
+background-color: lightgray;
+margin: 0;
+padding: 0;
+}
+
+#container {
+width: 80%; 
+margin: 20px auto; 
+background-color: white; 
+border: 2px solid gray; 
+padding: 20px;
+}
+
+#header {
+background-color: lightblue; 
+border: 2px solid darkcyan; 
+padding: 10px; 
+text-align: center; 
+}
+#header h1 {
+margin: 0;
+color: teal; 
+font-weight: bold;
+}
+#header p {
+font-style: italic; 
+color: gray;
+margin: 0;
+}
+
+#sidebar {
+float: left; 
+width: 25%; 
+background-color: lightcyan; 
+border: 2px solid darkcyan; 
+padding: 10px;
+box-sizing: border-box; 
+margin-right: 15px; 
+}
+
+#sidebar h2 {
+color: white; /* Text color for heading */
+background-color: teal; 
+padding: 5px;
+text-align: center;
+margin: 0 0 10px 0;
+}
+
+#sidebar ul {
+list-style-type: none; 
+padding: 0;
+}
+
+#sidebar li {
+background-color: azure; 
+border: 1px solid darkcyan; 
+margin-bottom: 5px;
+padding: 5px;
+font-weight: bold; 
+}
+
+#content {
+float: left; /* Next to sidebar */
+width: 70%;
+}
+
+.post {
+border: 2px solid darkcyan; /* Blue border for each post */
+background-color: aliceblue; /* Soft blue background */
+padding: 10px;
+margin-bottom: 15px;
+overflow: auto; 
+}
+
+.post h3 {
+color: teal; 
+border-bottom: 1px solid darkcyan; 
+padding-bottom: 5px;
+}
+
+.post p {
+font-size: 14px;
+line-height: 1.5; 
+}
+
+.post-image {
+float: right; 
+width: 120px;
+height: 150px;
+margin-left: 10px;
+border: 1px solid darkcyan;
+padding: 3px;
+}
+
+#container::after {
+content: "";
+display: block;
+clear: both;
+}
+</style>
+</head>
+<body>
+
+<div id="container">
+
+<!-- Header -->
+<div id="header">
+<h1>Victoria's Journal</h1>
+<p>So random. So delicious.</p>
+</div>
+
+<!-- Friends List -->
+<div id="sidebar">
+<h2>Friends</h2>
+<ul>
+<li>Willy Wonka</li>
+<li>Angry Bird</li>
+<li>Van gough</li>
+</ul>
+</div>
+
+<div id="content">
+
+<div class="post">
+<h3>04/09/08: Spatulas</h3>
+<p>
+Yesterday, I went to the store and got some much needed spatulas
+(two better ways to say “I love myself” are: 1) buy me a spatula,
+2) buy a spatula myself!)
+</p>
+<img src="Spatula.jpg" alt="Spatula image" class="post-image">
+</div>
+
+<div class="post">
+<h3>04/08/08: Cookie Cupcakes</h3>
+<p>
+
+My favorite cartoon character is Cookie, and my favorite dessert
+is cupcakes. So Cookie Cupcakes are best of both the worlds!
+Did you know? Cookie once said, “Sometimes me think what is love,
+and then me think love is what cookie is for. Me give up the last
+cookie for you.” I wonder if the same applies for cupcakes!
+
+</p>
+<img src="Cupcake.jpg" alt="Cupcakes image" class="post-image">
+</div>
+</div> <!-- End content -->
+</div> <!-- End container -->
+</body>
+</html>
